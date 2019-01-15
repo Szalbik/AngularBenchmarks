@@ -1,0 +1,11 @@
+<div style="box-sizing: border-box;">
+  <button (click)="_addPhoto()">Add photo</button>
+  <button (click)="_deletePhoto()">Delete photo</button>
+  <div style="display: inline-block" *ngFor="let photo of photos">
+    <img
+      style="height: 300px; width: 300px; margin-right: 5px;"
+      src="{{ photo.src }}"
+      alt="image"
+    />
+  </div>
+</div>
